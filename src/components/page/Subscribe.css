@@ -1,0 +1,129 @@
+/* Subscribe.css */
+
+/* Common styles for sections */
+.section {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+}
+
+/* Styles for the main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #d1f2fd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Avoid adding padding here, apply it to the inner elements instead */
+}
+
+/* Styles for the subscription image */
+.subscribe-img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Styles for the first section */
+.sec1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.subscribe-title {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.subscribe-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styles for the subscription input section */
+.subscribe-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.subscribe-input-text {
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 20px;
+    outline: none;
+    font-family: monospace;
+    margin-right: 10px;
+}
+
+.subscribe-input-text:focus {
+    border: 1px solid #000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.subscribe-input-btn {
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Styles for the second section (image) */
+.sec2 {
+    text-align: center;
+    margin-top: 20px;
+    /* Use margin for spacing */
+}
+
+/* Apply responsive styles for screens smaller than 768px */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .sec1,
+    .sec2 {
+        flex: 1;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .subscribe-title {
+        font-size: 30px;
+    }
+
+    .subscribe-text {
+        font-size: 15px;
+    }
+
+    .subscribe-input-text {
+        font-size: 15px;
+    }
+
+    .subscribe-input-btn {
+        font-size: 15px;
+    }
+
+    .sec2 {
+        display: none;
+    }
+}

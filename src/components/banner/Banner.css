@@ -1,0 +1,46 @@
+.banner {
+    background: url('https://toolxox.com/dl/1/is_1.0/tmp/images/dl.beatsnoop.com-ultra-xO2aG0LBWD.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    background-image: linear-gradient(-120deg, #da0d0d, #f04a4a);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+.banner button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.banner button:hover {
+    background-color: #005fa3;
+}
+
+@media screen and (max-width: 768px) {
+    .banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .banner button {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,120 @@
+/* Request.css */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+/* Request Section */
+.request-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Request Container */
+.request-container {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+/* Request Heading */
+.request-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Request Description */
+.request-description {
+    font-size: 16px;
+    color: #777;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Request Form */
+.request-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Request Input Container */
+.request-input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Request Input Group */
+.request-input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+/* Request Label */
+.request-label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Request Input */
+.request-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    resize: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+/* Request Button */
+.request-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.request-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .request-section {
+        padding: 20px;
+    }
+
+    .request-container {
+        padding: 20px;
+    }
+
+    .request-input-container {
+        flex-direction: column;
+    }
+
+    .request-input-group {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

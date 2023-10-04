@@ -1,0 +1,77 @@
+/* About.css */
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-title-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    color: #333;
+    /* You can change the color to your preference */
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #d1f2fd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.col1 {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-col1-title {
+    font-size: 1.5rem;
+    color: #333;
+    /* You can change the color to your preference */
+    margin-bottom: 10px;
+}
+
+.about-col1-description {
+    font-size: 1.1rem;
+    color: #333;
+    /* You can change the color to your preference */
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.col2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-col2-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .col1,
+    .col2 {
+        flex: none;
+        width: 100%;
+    }
+}
